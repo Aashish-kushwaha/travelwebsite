@@ -12,7 +12,7 @@
 </head>
 <body>
     <div class="header">
-        <nav>
+        <nav id="navBar">
             <img src="images/logo.png" class="logo">
 
             <ul class="nav-links">
@@ -28,7 +28,7 @@
             </ul>
             <!-- button -->
             <a href="#" class="register-btn">register now</a>
-            <i class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-bars" onclick="togglebtn()"></i>
         </nav>
         <!-- title -->
         <div class="container">           
@@ -237,6 +237,14 @@
 
     </div>
 
+
+<script>
+    var navBar=document.getElementById("navBar");
+    function togglebtn()
+    {
+        navBar.classList.toggle("hidemenu")
+    }
+</script>
     
 </body>
 </html>
